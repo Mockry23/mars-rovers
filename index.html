@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mission History of NASA's Mars Rovers" />
-  <meta name="keywords" content="NASA, Mars, Rover Timeline, Perseverance, Curiosity" />
+  <meta name="description" content="Overview of NASA's Mars Rover Program" />
+  <meta name="keywords" content="Mars, NASA, Rovers, Curiosity, Perseverance, Space Exploration" />
   <meta name="robots" content="noindex">
-  <title>Mission History | Mars Rovers</title>
+  <title>NASA Mars Rovers | Robotic Explorers on the Red Planet</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header role="banner">
     <h1>NASA Mars Rovers</h1>
+    <p>Robotic Explorers on the Red Planet</p>
+    <button class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
     <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,27 +24,83 @@
   </header>
 
   <main role="main">
-    <h2>Mission History</h2>
-    <p>Each of these rovers is more than machinery — they’re markers of time, technology, and truth-seeking. Here's a clear breakdown of when they landed and what changed because of them.</p>
+    <section>
+      <h2>Welcome</h2>
+      <p>I’m a political science and cybersecurity student. My curiosity about how systems work doesn't stop at Earth. This site explores NASA's Mars Rovers — machines designed to operate in isolation, analyze data, and relay truth from another world. That mission resonates with me.</p>
+      <figure>
+        <img src="images/mars-surface.jpg" alt="Surface of Mars captured by NASA's Perseverance Rover" class="responsive" />
+        <figcaption>Surface of Mars (NASA/JPL-Caltech)</figcaption>
+      </figure>
+    </section>
 
-    <figure>
-      <img src="images/rover-timeline.jpg" alt="Visual timeline of NASA Mars rover missions" class="responsive" />
-      <figcaption>Timeline of Mars Rover Missions (NASA/JPL-Caltech)</figcaption>
-    </figure>
+    <section>
+      <h2>Featured Rovers</h2>
 
-    <ul>
-      <li><strong>1997 – Sojourner:</strong> First mobile rover on Mars. Showed we could drive remotely with delay and minimal power.</li>
-      <li><strong>2004 – Spirit & Opportunity:</strong> Meant for 90 days, but lasted years. They sent back images, data, and evidence of ancient water.</li>
-      <li><strong>2012 – Curiosity:</strong> A lab on wheels. Analyzed rock layers and detected organics. Confirmed Mars could have once supported life.</li>
-      <li><strong>2021 – Perseverance:</strong> The boldest yet. Deploys drones, produces oxygen, and sets the stage for human missions.</li>
-    </ul>
+      <article>
+        <h3>Curiosity</h3>
+        <figure>
+          <img src="images/curiosity.jpg" alt="Curiosity Rover on Mars" class="responsive" />
+          <figcaption>Curiosity exploring Gale Crater (NASA/JPL-Caltech)</figcaption>
+        </figure>
+        <p>Launched in 2012, Curiosity confirmed Mars once had the elements needed for life. It became a self-sustaining mobile lab, showing us that science doesn’t sleep — even 140 million miles away.</p>
+      </article>
+
+      <article>
+        <h3>Perseverance</h3>
+        <figure>
+          <img src="images/perseverance.jpg" alt="Perseverance Rover during mission" class="responsive" />
+          <figcaption>Perseverance in Jezero Crater (NASA/JPL-Caltech)</figcaption>
+        </figure>
+        <p>More than a rover — it’s a prelude to human colonization. Deployed in 2021, Perseverance is not just collecting Martian rock samples, it’s testing oxygen production for future crews.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Rover Comparison Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Rover</th>
+            <th scope="col">Launch Year</th>
+            <th scope="col">Power Source</th>
+            <th scope="col">Primary Mission</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sojourner</td>
+            <td>1996</td>
+            <td>Solar</td>
+            <td>Demonstrate rover technology</td>
+          </tr>
+          <tr>
+            <td>Spirit & Opportunity</td>
+            <td>2003</td>
+            <td>Solar</td>
+            <td>Search for signs of water</td>
+          </tr>
+          <tr>
+            <td>Curiosity</td>
+            <td>2011</td>
+            <td>Nuclear</td>
+            <td>Analyze habitability</td>
+          </tr>
+          <tr>
+            <td>Perseverance</td>
+            <td>2020</td>
+            <td>Nuclear</td>
+            <td>Search for ancient life and cache samples</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <h3>Sources</h3>
     <ul>
-      <li><a href="https://mars.nasa.gov/MPF/" target="_blank">NASA: Mars Pathfinder</a></li>
-      <li><a href="https://mars.nasa.gov/mer/" target="_blank">NASA: Spirit & Opportunity</a></li>
-      <li><a href="https://mars.nasa.gov/msl/" target="_blank">NASA: Curiosity Rover</a></li>
-      <li><a href="https://mars.nasa.gov/mars2020/" target="_blank">NASA: Perseverance Rover</a></li>
+      <li><a href="https://mars.nasa.gov/" target="_blank">NASA Mars Exploration Program</a></li>
+      <li><a href="https://mars.nasa.gov/msl/home/" target="_blank">Curiosity Rover</a></li>
+      <li><a href="https://mars.nasa.gov/mars2020/" target="_blank">Perseverance Rover</a></li>
+      <li><a href="https://mars.nasa.gov/MPF/" target="_blank">Mars Pathfinder Mission</a></li>
     </ul>
 
     <p style="text-align: center;">
@@ -51,11 +109,17 @@
   </main>
 
   <footer role="contentinfo">
-    <p><a href="mailto:yourname@email.com">Contact Me</a> |
+    <p><a href="mailto:yourname@email.com">Contact Me</a> | 
        <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
 
-      
