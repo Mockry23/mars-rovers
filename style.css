@@ -1,1 +1,98 @@
-body { background-color: #0b3d91; color: white; font-family: Arial; }
+/* General Styling */
+body {
+  background-color: #0b3d91; /* NASA blue */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #0c2340;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #ff6f61; /* NASA red/orange */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #d6e0f0; /* light blue text for headers */
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+dl {
+  margin-top: 20px;
+}
+
+dl dt {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+dl dd {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer Links */
+footer a {
+  color: #b3cde0;
+}
+
+/* Images */
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Source Lists */
+h3 + ul {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+h3 + ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Back to homepage link */
+a[target="_blank"] {
+  display: inline-block;
+  margin-top: 20px;
+  color: #7aa0ff;
+  font-weight: bold;
+}
