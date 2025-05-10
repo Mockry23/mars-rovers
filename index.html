@@ -3,24 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Overview of NASA's Mars Rover Program" />
+  <meta name="description" content="Mission History of NASA's Mars Rovers" />
+  <meta name="keywords" content="NASA, Mars, Rover Timeline, Perseverance, Curiosity" />
   <meta name="robots" content="noindex">
-  <title>NASA Mars Rovers</title>
+  <title>Mission History | Mars Rovers</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-  </style>
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>NASA Mars Rovers</h1>
-    <p>Robotic Explorers on the Red Planet</p>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="mission-history.html">Mission History</a></li>
@@ -29,83 +21,41 @@
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>I’m a political science and cybersecurity student. My curiosity about how systems work doesn't stop at Earth. This site explores NASA's Mars Rovers — machines designed to operate in isolation, analyze data, and relay truth from another world. That mission resonates with me.</p>
-      <figure>
-        <img src="images/mars-surface.jpg" alt="Mars surface" class="responsive" />
-        <figcaption>Surface of Mars captured by NASA's Perseverance Rover (NASA/JPL-Caltech)</figcaption>
-      </figure>
-    </section>
+  <main role="main">
+    <h2>Mission History</h2>
+    <p>Each of these rovers is more than machinery — they’re markers of time, technology, and truth-seeking. Here's a clear breakdown of when they landed and what changed because of them.</p>
 
-    <section>
-      <h2>Featured Rovers</h2>
+    <figure>
+      <img src="images/rover-timeline.jpg" alt="Visual timeline of NASA Mars rover missions" class="responsive" />
+      <figcaption>Timeline of Mars Rover Missions (NASA/JPL-Caltech)</figcaption>
+    </figure>
 
-      <article>
-        <h3>Curiosity</h3>
-        <figure>
-          <img src="images/curiosity.jpg" alt="Curiosity Rover" class="responsive" />
-          <figcaption>Curiosity exploring Gale Crater (NASA/JPL-Caltech)</figcaption>
-        </figure>
-        <p>Launched in 2012, Curiosity confirmed Mars once had the elements needed for life. It became a self-sustaining mobile lab, showing us that science doesn’t sleep — even 140 million miles away.</p>
-      </article>
-
-      <article>
-        <h3>Perseverance</h3>
-        <figure>
-          <img src="images/perseverance.jpg" alt="Perseverance Rover" class="responsive" />
-          <figcaption>Perseverance in Jezero Crater (NASA/JPL-Caltech)</figcaption>
-        </figure>
-        <p>More than a rover — it’s a prelude to human colonization. Deployed in 2021, Perseverance is not just collecting Martian rock samples, it’s testing oxygen production for future crews.</p>
-      </article>
-
-      <article>
-        <h3>Spirit</h3>
-        <figure>
-          <img src="images/spirit.jpg" alt="Spirit Rover" class="responsive" />
-          <figcaption>Spirit navigating rocky terrain (NASA/JPL)</figcaption>
-        </figure>
-        <p>Spirit was the rover that never gave up. It lasted far beyond its expected mission and sent back some of the most iconic images from Mars.</p>
-      </article>
-
-      <article>
-        <h3>Opportunity</h3>
-        <figure>
-          <img src="images/opportunity.jpg" alt="Opportunity Rover" class="responsive" />
-          <figcaption>Opportunity's view of Meridiani Planum (NASA/JPL)</figcaption>
-        </figure>
-        <p>Opportunity was an overachiever — built to last 90 days, but survived for almost 15 years. It traveled more than 28 miles and sent home over 200,000 images.</p>
-      </article>
-
-      <article>
-        <h3>Sojourner</h3>
-        <figure>
-          <img src="images/sojourner.jpg" alt="Sojourner Rover" class="responsive" />
-          <figcaption>Sojourner next to Yogi rock, 1997 (NASA/JPL)</figcaption>
-        </figure>
-        <p>Sojourner was the pioneer. In 1997, it became the first mobile robot to operate on another planet, proving the viability of robotic surface exploration.</p>
-      </article>
-    </section>
+    <ul>
+      <li><strong>1997 – Sojourner:</strong> First mobile rover on Mars. Showed we could drive remotely with delay and minimal power.</li>
+      <li><strong>2004 – Spirit & Opportunity:</strong> Meant for 90 days, but lasted years. They sent back images, data, and evidence of ancient water.</li>
+      <li><strong>2012 – Curiosity:</strong> A lab on wheels. Analyzed rock layers and detected organics. Confirmed Mars could have once supported life.</li>
+      <li><strong>2021 – Perseverance:</strong> The boldest yet. Deploys drones, produces oxygen, and sets the stage for human missions.</li>
+    </ul>
 
     <h3>Sources</h3>
     <ul>
-      <li>NASA JPL. “Mars Exploration Program.” <a href="https://mars.nasa.gov/" target="_blank">https://mars.nasa.gov/</a></li>
-      <li>NASA JPL. “Curiosity Mission Overview.” <a href="https://mars.nasa.gov/msl/home/" target="_blank">https://mars.nasa.gov/msl/home/</a></li>
-      <li>NASA JPL. “Perseverance Mission.” <a href="https://mars.nasa.gov/mars2020/" target="_blank">https://mars.nasa.gov/mars2020/</a></li>
-      <li>NASA JPL. “Mars Pathfinder Mission.” <a href="https://mars.nasa.gov/MPF/" target="_blank">https://mars.nasa.gov/MPF/</a></li>
+      <li><a href="https://mars.nasa.gov/MPF/" target="_blank">NASA: Mars Pathfinder</a></li>
+      <li><a href="https://mars.nasa.gov/mer/" target="_blank">NASA: Spirit & Opportunity</a></li>
+      <li><a href="https://mars.nasa.gov/msl/" target="_blank">NASA: Curiosity Rover</a></li>
+      <li><a href="https://mars.nasa.gov/mars2020/" target="_blank">NASA: Perseverance Rover</a></li>
     </ul>
 
-    <p style="text-align: center; margin-top: 40px;">
+    <p style="text-align: center;">
       <a href="https://mockry23.github.io/web-technologies-course-homepage/" target="_blank">← Back to Course Homepage</a>
     </p>
   </main>
 
-  <footer>
-    <p><a href="mailto:gimoreno@email.com">Contact Me</a> | 
-    <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
+  <footer role="contentinfo">
+    <p><a href="mailto:yourname@email.com">Contact Me</a> |
+       <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
   </footer>
 </body>
 </html>
 
+      
