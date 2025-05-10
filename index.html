@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,12 +7,20 @@
   <meta name="robots" content="noindex">
   <title>NASA Mars Rovers</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header role="banner">
+  <header>
     <h1>NASA Mars Rovers</h1>
     <p>Robotic Explorers on the Red Planet</p>
-    <nav role="navigation">
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="mission-history.html">Mission History</a></li>
@@ -21,11 +29,14 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main>
     <section>
-      <h2>Welcome to the Mars Rover Program</h2>
-      <p>Since 1997, NASA has sent robotic rovers to Mars to explore the planet's surface, search for signs of water, and gather data about its geology and atmosphere.</p>
-      <img src="images/mars-surface.jpg" alt="Mars surface view from rover" class="responsive" />
+      <h2>Welcome</h2>
+      <p>I’m a political science and cybersecurity student. My curiosity about how systems work doesn't stop at Earth. This site explores NASA's Mars Rovers — machines designed to operate in isolation, analyze data, and relay truth from another world. That mission resonates with me.</p>
+      <figure>
+        <img src="images/mars-surface.jpg" alt="Mars surface" class="responsive" />
+        <figcaption>Surface of Mars captured by NASA's Perseverance Rover (NASA/JPL-Caltech)</figcaption>
+      </figure>
     </section>
 
     <section>
@@ -33,44 +44,68 @@
 
       <article>
         <h3>Curiosity</h3>
-        <img src="images/curiosity.jpg" alt="NASA's Curiosity Rover" class="responsive" />
-        <p>Curiosity isn’t just some passive piece of equipment—it’s been on Mars since 2012 rewriting everything we assumed about the planet’s potential to support life. It’s stationed in Gale Crater, but this rover doesn’t just sit still—it drills, it lasers, it sniffs the air. Its findings confirmed that ancient Mars had liquid water, a stable climate, and the chemical building blocks needed for life. It’s been silently pushing boundaries, doing the kind of fieldwork that human scientists can only dream of—alone, and on another planet.</p>
+        <figure>
+          <img src="images/curiosity.jpg" alt="Curiosity Rover" class="responsive" />
+          <figcaption>Curiosity exploring Gale Crater (NASA/JPL-Caltech)</figcaption>
+        </figure>
+        <p>Launched in 2012, Curiosity confirmed Mars once had the elements needed for life. It became a self-sustaining mobile lab, showing us that science doesn’t sleep — even 140 million miles away.</p>
       </article>
 
       <article>
         <h3>Perseverance</h3>
-        <img src="images/perseverance.jpg" alt="NASA's Perseverance Rover" class="responsive" />
-        <p>If Curiosity opened the door, Perseverance walked through it like it owned the place. Touching down in Jezero Crater in 2021, it came equipped with the most advanced tools we’ve ever sent to another planet. It’s not just searching for ancient microbial life—it’s actively prepping Mars for future human missions. It dropped off the first interplanetary helicopter. It’s generating oxygen from the atmosphere. And it’s stashing rock samples for a return trip we haven’t even launched yet. Perseverance is less of a robot and more like a preview of everything coming next.</p>
+        <figure>
+          <img src="images/perseverance.jpg" alt="Perseverance Rover" class="responsive" />
+          <figcaption>Perseverance in Jezero Crater (NASA/JPL-Caltech)</figcaption>
+        </figure>
+        <p>More than a rover — it’s a prelude to human colonization. Deployed in 2021, Perseverance is not just collecting Martian rock samples, it’s testing oxygen production for future crews.</p>
       </article>
 
       <article>
         <h3>Spirit</h3>
-        <img src="images/spirit.jpg" alt="NASA's Spirit Rover" class="responsive" />
-        <p>Spirit was the rover that never gave up. It was supposed to last 90 days. It went for over six years. Through mechanical failures, harsh winters, and dust storms, Spirit kept transmitting images and data that deepened our understanding of Martian geology. It found proof of past water, climbed hills, and took some of the most iconic photos of the red planet before its final signal in 2010. If there's a definition of resilience in robotics, it's Spirit.</p>
+        <figure>
+          <img src="images/spirit.jpg" alt="Spirit Rover" class="responsive" />
+          <figcaption>Spirit navigating rocky terrain (NASA/JPL)</figcaption>
+        </figure>
+        <p>Spirit was the rover that never gave up. It lasted far beyond its expected mission and sent back some of the most iconic images from Mars.</p>
       </article>
 
       <article>
         <h3>Opportunity</h3>
-        <img src="images/opportunity.jpg" alt="NASA's Opportunity Rover" class="responsive" />
-        <p>Opportunity was the overachiever of the rover fleet. Landed in 2004, it explored the Martian surface for nearly 15 years—uncovering hematite spheres, layered rocks, and the clearest evidence we’ve ever had of sustained water flow on ancient Mars. It traveled over 28 miles, broke records, and sent home more than 200,000 images. Its final message—“My battery is low and it’s getting dark”—wasn’t just poetic, it was unforgettable.</p>
+        <figure>
+          <img src="images/opportunity.jpg" alt="Opportunity Rover" class="responsive" />
+          <figcaption>Opportunity's view of Meridiani Planum (NASA/JPL)</figcaption>
+        </figure>
+        <p>Opportunity was an overachiever — built to last 90 days, but survived for almost 15 years. It traveled more than 28 miles and sent home over 200,000 images.</p>
       </article>
 
       <article>
         <h3>Sojourner</h3>
-        <img src="images/sojourner.jpg" alt="NASA's Sojourner Rover" class="responsive" />
-        <p>Sojourner was the prototype that proved the whole idea was possible. In 1997, it became the first rover to operate on another planet. It was small—about the size of a microwave—but it set the standard. It analyzed rocks, took panoramic images, and showed that we could drive a robot on Mars with delayed communication and limited power. Everything that came after owes a nod to Sojourner. It was humble, historic, and ahead of its time.</p>
+        <figure>
+          <img src="images/sojourner.jpg" alt="Sojourner Rover" class="responsive" />
+          <figcaption>Sojourner next to Yogi rock, 1997 (NASA/JPL)</figcaption>
+        </figure>
+        <p>Sojourner was the pioneer. In 1997, it became the first mobile robot to operate on another planet, proving the viability of robotic surface exploration.</p>
       </article>
     </section>
+
+    <h3>Sources</h3>
+    <ul>
+      <li>NASA JPL. “Mars Exploration Program.” <a href="https://mars.nasa.gov/" target="_blank">https://mars.nasa.gov/</a></li>
+      <li>NASA JPL. “Curiosity Mission Overview.” <a href="https://mars.nasa.gov/msl/home/" target="_blank">https://mars.nasa.gov/msl/home/</a></li>
+      <li>NASA JPL. “Perseverance Mission.” <a href="https://mars.nasa.gov/mars2020/" target="_blank">https://mars.nasa.gov/mars2020/</a></li>
+      <li>NASA JPL. “Mars Pathfinder Mission.” <a href="https://mars.nasa.gov/MPF/" target="_blank">https://mars.nasa.gov/MPF/</a></li>
+    </ul>
 
     <p style="text-align: center; margin-top: 40px;">
       <a href="https://mockry23.github.io/web-technologies-course-homepage/" target="_blank">← Back to Course Homepage</a>
     </p>
   </main>
 
-  <footer role="contentinfo">
-    <p><a href="mailto:yourname@email.com">Contact Me</a> | 
-       <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
+  <footer>
+    <p><a href="mailto:gimoreno@email.com">Contact Me</a> | 
+    <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
   </footer>
 </body>
 </html>
+
