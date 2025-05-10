@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Frequently Asked Questions about NASA's Mars Rovers" />
+  <meta name="description" content="Mission History of NASA's Mars Rovers" />
+  <meta name="keywords" content="NASA, Mars, Rover Timeline, Perseverance, Curiosity" />
   <meta name="robots" content="noindex">
-  <title>FAQ</title>
+  <title>Mission History | Mars Rovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>NASA Mars Rovers</h1>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="mission-history.html">Mission History</a></li>
@@ -20,51 +21,38 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Frequently Asked Questions</h2>
-    <img src="images/mars-questions.jpg" alt="Mars rover with question marks overlay" class="responsive" />
+  <main role="main">
+    <h2>Mission History</h2>
+    <p>Each of these rovers is more than machinery — they’re markers of time, technology, and truth-seeking. Here's a clear breakdown of when they landed and what changed because of them.</p>
 
-    <dl>
-      <dt>Why does NASA keep sending rovers to Mars?</dt>
-      <dd>Because Mars is the most Earth-like planet we can reach with current tech. It’s a testbed for biology, geology, and long-term survival. Mars gives us answers about the past — and prepares us for future colonization.</dd>
+    <figure>
+      <img src="images/rover-timeline.jpg" alt="Visual timeline of NASA Mars rover missions" class="responsive" />
+      <figcaption>Timeline of Mars Rover Missions (NASA/JPL-Caltech)</figcaption>
+    </figure>
 
-      <dt>How are rovers controlled from Earth?</dt>
-      <dd>Rovers aren’t controlled in real-time. There's a 5–20 minute delay each way depending on orbit. NASA engineers program sequences of instructions, which are then executed autonomously with hazard-avoidance routines built-in.</dd>
-
-      <dt>Have any rovers ever found life?</dt>
-      <dd>No rover has confirmed life. But missions like Curiosity and Perseverance have detected organic molecules and patterns in ancient rock that suggest Mars once had habitable conditions — and might still host microbial life deep underground.</dd>
-
-      <dt>How do Mars rovers survive the harsh climate?</dt>
-      <dd>NASA designs rovers to endure extreme cold, dust, and radiation. Most rely on solar panels (like Spirit and Opportunity) or nuclear power sources (like Curiosity and Perseverance) to stay functional through night cycles and dust storms.</dd>
-
-      <dt>What happens after a rover dies?</dt>
-      <dd>NASA tracks the last transmission. If it can’t reestablish contact over time, the mission is declared complete. But the data lives on — stored, studied, and used to design the next one better. Nothing sent to Mars is wasted.</dd>
-    </dl>
+    <ul>
+      <li><strong>1997 – Sojourner:</strong> First mobile rover on Mars. Showed we could drive remotely with delay and minimal power.</li>
+      <li><strong>2004 – Spirit & Opportunity:</strong> Meant for 90 days, but lasted years. They sent back images, data, and evidence of ancient water.</li>
+      <li><strong>2012 – Curiosity:</strong> A lab on wheels. Analyzed rock layers and detected organics. Confirmed Mars could have once supported life.</li>
+      <li><strong>2021 – Perseverance:</strong> The boldest yet. Deploys drones, produces oxygen, and sets the stage for human missions.</li>
+    </ul>
 
     <h3>Sources</h3>
     <ul>
-      <li>
-        NASA Jet Propulsion Laboratory. “Mars Rovers Overview.”  
-        <a href="https://mars.nasa.gov/mars-exploration/missions/" target="_blank">https://mars.nasa.gov/mars-exploration/missions/</a>
-      </li>
-      <li>
-        NASA JPL. “How Mars Rovers Work.”  
-        <a href="https://mars.nasa.gov/mars2020/spacecraft/rover/" target="_blank">https://mars.nasa.gov/mars2020/spacecraft/rover/</a>
-      </li>
-      <li>
-        NASA JPL. “Perseverance Rover Finds Organic Matter.”  
-        <a href="https://mars.nasa.gov/news/9256/perseverance-rover-finds-signs-of-ancient-organic-matter/" target="_blank">https://mars.nasa.gov/news/9256/perseverance-rover-finds-signs-of-ancient-organic-matter/</a>
-      </li>
+      <li><a href="https://mars.nasa.gov/MPF/" target="_blank">NASA: Mars Pathfinder</a></li>
+      <li><a href="https://mars.nasa.gov/mer/" target="_blank">NASA: Spirit & Opportunity</a></li>
+      <li><a href="https://mars.nasa.gov/msl/" target="_blank">NASA: Curiosity Rover</a></li>
+      <li><a href="https://mars.nasa.gov/mars2020/" target="_blank">NASA: Perseverance Rover</a></li>
     </ul>
 
-    <p style="text-align: center; margin-top: 40px;">
+    <p style="text-align: center;">
       <a href="https://mockry23.github.io/web-technologies-course-homepage/" target="_blank">← Back to Course Homepage</a>
     </p>
   </main>
 
-  <footer>
-    <p><a href="mailto:yourname@email.com">Contact Me</a> | 
-    <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
+  <footer role="contentinfo">
+    <p><a href="mailto:yourname@email.com">Contact Me</a> |
+       <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
   </footer>
 </body>
