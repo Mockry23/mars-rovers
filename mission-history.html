@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Mission History of NASA's Mars Rovers" />
+  <meta name="keywords" content="NASA, Mars, Rover Timeline, Perseverance, Curiosity" />
   <meta name="robots" content="noindex">
-  <title>Mission History</title>
+  <title>Mission History | Mars Rovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>NASA Mars Rovers</h1>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="mission-history.html">Mission History</a></li>
@@ -20,47 +21,38 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main">
     <h2>Mission History</h2>
-    <p>I don’t just look at rovers as machines — I look at them as milestones. Each one was a shift in what we thought was possible. Below is a breakdown of when key players landed on Mars and what made them unforgettable.</p>
+    <p>Each of these rovers is more than machinery — they’re markers of time, technology, and truth-seeking. Here's a clear breakdown of when they landed and what changed because of them.</p>
 
-    <img src="images/rover-timeline.jpg" alt="Timeline of Mars rover missions" class="responsive" />
+    <figure>
+      <img src="images/rover-timeline.jpg" alt="Visual timeline of NASA Mars rover missions" class="responsive" />
+      <figcaption>Timeline of Mars Rover Missions (NASA/JPL-Caltech)</figcaption>
+    </figure>
 
     <ul>
-      <li><strong>1997 – Sojourner:</strong> The first mobile rover to touch down on another planet. Small, slow, but historic. It proved remote exploration was feasible.</li>
-      <li><strong>2004 – Spirit & Opportunity:</strong> Twin rovers designed for 90 days. Spirit lasted 6 years, Opportunity lasted nearly 15. They redefined endurance.</li>
-      <li><strong>2012 – Curiosity:</strong> A fully equipped science lab on wheels. It confirmed ancient Mars had conditions suitable for life.</li>
-      <li><strong>2021 – Perseverance:</strong> Not just researching, but preparing the planet for future human arrival. It dropped a helicopter, generated oxygen, and is caching samples for Earth return.</li>
+      <li><strong>1997 – Sojourner:</strong> First mobile rover on Mars. Showed we could drive remotely with delay and minimal power.</li>
+      <li><strong>2004 – Spirit & Opportunity:</strong> Meant for 90 days, but lasted years. They sent back images, data, and evidence of ancient water.</li>
+      <li><strong>2012 – Curiosity:</strong> A lab on wheels. Analyzed rock layers and detected organics. Confirmed Mars could have once supported life.</li>
+      <li><strong>2021 – Perseverance:</strong> The boldest yet. Deploys drones, produces oxygen, and sets the stage for human missions.</li>
     </ul>
 
     <h3>Sources</h3>
     <ul>
-      <li>
-        NASA Jet Propulsion Laboratory. “Mars Pathfinder.” 
-        <a href="https://mars.nasa.gov/MPF/" target="_blank">https://mars.nasa.gov/MPF/</a>
-      </li>
-      <li>
-        NASA JPL. “Spirit and Opportunity.” 
-        <a href="https://mars.nasa.gov/mer/" target="_blank">https://mars.nasa.gov/mer/</a>
-      </li>
-      <li>
-        NASA JPL. “Curiosity Rover.” 
-        <a href="https://mars.nasa.gov/msl/" target="_blank">https://mars.nasa.gov/msl/</a>
-      </li>
-      <li>
-        NASA JPL. “Perseverance Rover.” 
-        <a href="https://mars.nasa.gov/mars2020/" target="_blank">https://mars.nasa.gov/mars2020/</a>
-      </li>
+      <li><a href="https://mars.nasa.gov/MPF/" target="_blank">NASA: Mars Pathfinder</a></li>
+      <li><a href="https://mars.nasa.gov/mer/" target="_blank">NASA: Spirit & Opportunity</a></li>
+      <li><a href="https://mars.nasa.gov/msl/" target="_blank">NASA: Curiosity Rover</a></li>
+      <li><a href="https://mars.nasa.gov/mars2020/" target="_blank">NASA: Perseverance Rover</a></li>
     </ul>
 
-    <p style="text-align: center; margin-top: 40px;">
+    <p style="text-align: center;">
       <a href="https://mockry23.github.io/web-technologies-course-homepage/" target="_blank">← Back to Course Homepage</a>
     </p>
   </main>
 
-  <footer>
-    <p><a href="mailto:yourname@email.com">Contact Me</a> | 
-    <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
+  <footer role="contentinfo">
+    <p><a href="mailto:yourname@email.com">Contact Me</a> |
+       <a href="https://mars.nasa.gov/" target="_blank">NASA Mars Program</a></p>
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
   </footer>
 </body>
